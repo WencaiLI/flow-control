@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: stream_controller
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 2000
+
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      username:
+      password:
+      uri: mongodb://localhost:27017/logdb
+      database: logdb
+
+mongo:
+  host: 127.0.0.1
+  port: 27017
+  username:
+  password:
+  dbname: logdb
+  collectionname_1: logdb
+  connectionsPerHost: 10
+  threadsAllowedToBlockForConnectionMultiplier: 5
+  connectTimeout: 1000
+  maxWaitTime: 1500
+  socketKeepAlive: true
+  socketTimeout: 1500
+  wtimeout: 1000
+
+server:
+  port: 11111
+
+logging:
+  config: classpath:logback/logback-spring.xml
+#  level:
+#    tcu.example.home.db.dao: debug
