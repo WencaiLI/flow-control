@@ -31,7 +31,7 @@ public class InterfaceLimitAop {
      */
     private final Map<String, RateLimiter> limitMap = Maps.newConcurrentMap();
 
-    @Around("@annotation(com.thtf.stream_controller.aop.InterfaceLimit)")
+    @Around("@annotation(com.lwc.flowcontrol.aop.InterfaceLimit)")
     public Object around(ProceedingJoinPoint joinPoint) throws Throwable{
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();

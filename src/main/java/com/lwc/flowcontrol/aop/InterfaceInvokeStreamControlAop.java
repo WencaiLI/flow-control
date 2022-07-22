@@ -30,7 +30,7 @@ public class InterfaceInvokeStreamControlAop {
     @Resource
     RedisTemplate<String,Object> redisTemplate;
 
-    @Pointcut(value = "@annotation(com.thtf.stream_controller.aop.InterfaceStreamControl)")
+    @Pointcut(value = "@annotation(com.lwc.flowcontrol.aop.InterfaceStreamControl)")
     public void cutService() {
     }
 

@@ -96,7 +96,7 @@
     <!-- mongodb数据库存储 -->
     <!-- mongoDB输出设置,此处是定义 -->
     <!-- 开发环境 -->
-    <appender name="MyMongoDB" class="com.thtf.stream_controller.commons.config.mongodb.MongoDBAppender" >
+    <appender name="MyMongoDB" class="com.lwc.flowcontrol.commons.config.mongodb.MongoDBAppender" >
         <!-- 此日志文件只记录info级别的 -->
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>ERROR</level>
